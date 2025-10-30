@@ -4,7 +4,7 @@ import "./team.css";
 import dish21 from "./image/dish21.jpeg";
 import nailah from "./image/nailah.jpeg";
 import nishka from "./image/nishka.jpeg";
-import Kenisha from "./image/kenisha.jpeg";
+import Kenisha from "./image/Kenisha.jpeg";
 import rachita from "./image/rachita.jpeg";
 const teamMembers = [
     {
