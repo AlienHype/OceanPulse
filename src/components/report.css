@@ -1,0 +1,99 @@
+.report-section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.report-form-and-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.report-form {
+  background: var(--background);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.report-form textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.report-form input[type="file"] {
+  margin-top: 0.5rem;
+}
+
+.report-form button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.report-form button:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(80, 154, 207, 0.18);
+  background: #0077b6;
+}
+
+.report-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 350px;
+}
+
+.report-card {
+  display: flex;
+  align-items: center;
+  background: var(--background);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(9, 68, 178, 0.1);
+  padding: 1rem;
+  width: 350px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.report-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(63, 144, 180, 0.18);
+  background: var(--background);
+}
+
+.report-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.report-details {
+    flex: 1;
+    text-align: left;
+}
+
+/* Make report cards stack in two columns */
+.report-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 800px) {
+    .report-list {
+        grid-template-columns: 1fr;
+    }
+}

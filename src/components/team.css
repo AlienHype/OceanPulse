@@ -1,0 +1,62 @@
+.team-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: var(--background); /* Use your app's background variable */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.team-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  /* box-shadow: 0 8px 24px rgba(0,0,0,0.18); */
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  background: var(--background); /* Keep the same color on hover */
+}
+
+.team-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 15%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.team-card h3 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.team-card p {
+  font-family: var(--font-sans, 'Inter', sans-serif); /* Use your app's default sans font */
+  font-size: 0.9rem;
+  color: var(--primary-foreground, #6b7280); /* Use your app's foreground color variable */
+  opacity: 0.6; /* Matches /60 utility */
+  margin-top: 0.25rem;
+}
+
+.member-role {
+  font-family: var(--font-sans, 'Inter', sans-serif); /* Use your app's default sans font */
+  font-size: 0.9rem;
+  color: var(--primary-foreground, #6b7280); /* Use your app's foreground color variable */
+  opacity: 0.6; /* Matches /60 utility */
+  margin-top: 0.25rem;
+}
